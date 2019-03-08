@@ -19,9 +19,9 @@ in any of the server apps and I will try to fix it.
 This client side E-commerce application is also implemented using other client side technologies:
 - [React Redux](https://github.com/melardev/ReactReduxEcommerceRestApi)
 - [React](https://github.com/melardev/ReactEcommerceRestApi)
-- Vue will be released soon
-- [Vue + Vuex]()
-- Angular will be released soon
+- [Vue](https://github.com/melardev/VueEcommerceRestApi)
+- [Vue + Vuex](https://github.com/melardev/VueVuexEcommerceRestApi)
+- [Angular](https://github.com/melardev/AngularEcommerceRestApi)
 
 # TODO
 - After login or register redirect where the user was

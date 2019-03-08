@@ -2,7 +2,7 @@
     <div class="container">
 
         <!-- <app-carousel :items="carouselItems"></app-carousel> -->
-
+        <app-carousel :items="this.tagsAndCategories"></app-carousel>
         <div class="container" style="margin-top: '100px'">
             <div class="row">
                 <div class="col-lg-12">

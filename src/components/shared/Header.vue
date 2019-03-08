@@ -1,7 +1,7 @@
 <template>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="/">Vue Crud</a>
+            <a class="navbar-brand" href="/">Vue + Vuex Ecommerce app</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -48,22 +48,6 @@
                         </transition>
                     </li>
 
-                    <!--
-                    <li class="nav-item">
-                        <btn btnColor="btn btn-small btn-info btn-popup"
-                             :cartIcon="true"
-                             @click.native="showPopupCart()">
-                            Cart
-                            <span class="btn-circle" v-if="hasProduct()">
-           {{ getProductsInCart.length }}
-        </span>
-                        </btn>
-                        <transition name="appear">
-                            <popupcart class="cart" v-if="shouldShowCartDialog"/>
-                        </transition>
-                    </li>
-
-                    -->
                 </ul>
             </div>
         </div>

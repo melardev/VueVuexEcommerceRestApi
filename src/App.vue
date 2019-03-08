@@ -19,7 +19,7 @@
     import {mapActions, mapGetters} from 'vuex';
 
     import popupcart from './components/cart/PopupCart';
-    import darkenBackground from './components/Mask';
+    import darkenBackground from './components/shared/DarkenBackground';
 
     import Notifications from "@/components/shared/Notifications";
     import Header from "@/components/shared/Header";

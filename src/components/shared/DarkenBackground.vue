@@ -1,5 +1,5 @@
 <template>
-    <div class="mask"></div>
+    <div class="darken-background"></div>
 </template>
 
 <script>
@@ -8,7 +8,7 @@
 </script>
 
 <style scoped>
-    .mask {
+    .darken-background {
         position: fixed;
         top: 50%;
         left: 50%;

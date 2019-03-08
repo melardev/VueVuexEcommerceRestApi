@@ -10,7 +10,7 @@
                             <div class="card h-100">
                                 <router-link :to="`/products/${product.slug}`">
                                     <img class="card-img-top" style="height: '250px'"
-                                         :src="[product.image_urls && product.image_urls instanceof Array && product.image_urls.length > 0  ? product.image_urls[0] : 'https://img.business.com/rc/816x500/aHR0cHM6Ly93d3cuYnVzaW5lc3NuZXdzZGFpbHkuY29tL2ltYWdlcy9pLzAwMC8wMTcvMDg0L29yaWdpbmFsL21hY2Jvb2stcHJvLTE4LnBuZw==?_ga=2.200130154.557404650.1551883694-765115885.1551883694']"
+                                         :src="[product.image_urls && product.image_urls instanceof Array && product.image_urls.length > 0 && false  ? product.image_urls[0] : 'https://img.business.com/rc/816x500/aHR0cHM6Ly93d3cuYnVzaW5lc3NuZXdzZGFpbHkuY29tL2ltYWdlcy9pLzAwMC8wMTcvMDg0L29yaWdpbmFsL21hY2Jvb2stcHJvLTE4LnBuZw==?_ga=2.200130154.557404650.1551883694-765115885.1551883694']"
                                          alt=""/>
                                 </router-link>
                                 <div class="card-body">
