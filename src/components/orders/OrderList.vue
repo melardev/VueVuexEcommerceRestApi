@@ -7,7 +7,7 @@
                         <div class="card-header">{{order.tracking_number}}</div>
                         <div class="card-body">
                             <h5 class="card-title">{{order.order_status}}</h5>
-                            <p class="card-text">{{order.total_amount.toFixed(2)}}$ for {{order.order_items_count}}</p>
+                            <p class="card-text">{{order.total_price.toFixed(2)}}$ for {{order.order_items_count}}</p>
                         </div>
                     </div>
                 </div>

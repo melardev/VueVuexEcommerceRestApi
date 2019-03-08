@@ -1,11 +1,39 @@
+- [Introduction](#introduction)
+- [Full-stack Applications](#full-stack-applications)
+  * [E-commerce (shopping cart)](#e-commerce--shopping-cart-)
+    + [Server side implementations](#server-side-implementations)
+    + [Client side implementations](#client-side-implementations)
+  * [Blog/CMS](#blog-cms)
+    + [Server side implementations](#server-side-implementations-1)
+    + [Client side](#client-side)
+      - [The next come are](#the-next-come-are)
+  * [Simple CRUD(Create, Read, Update, Delete)](#simple-crud-create--read--update--delete-)
+    + [Server side implementations](#server-side-implementations-2)
+    + [Client side implementations](#client-side-implementations-1)
+      - [The next come are](#the-next-come-are-1)
+  * [CRUD + Pagination](#crud---pagination)
+    + [Server side implementations](#server-side-implementations-3)
+      - [The next come are](#the-next-come-are-2)
+    + [Client side implementations](#client-side-implementations-2)
+      - [The next come are](#the-next-come-are-3)
+- [TODO](#todo)
+- [Resources](#resources)
+  * [Project setup](#project-setup)
+    + [Compiles and hot-reloads for development](#compiles-and-hot-reloads-for-development)
+    + [Compiles and minifies for production](#compiles-and-minifies-for-production)
+    + [Run your tests](#run-your-tests)
+    + [Lints and fixes files](#lints-and-fixes-files)
+    
 # Introduction
 This shopping cart application is built using Vue + Vuex, it is supposed to work with any of these servers listed below. **Be warned** that
 while making this app I am using this [Spring Boot Server](https://github.com/melardev/SBootApiEcomMVCHibernate) so I strongly encourage you
 to use that as well, all the other servers worked from postman, but I don't know If they return in the response something called differently that
-this redux app can not read, so if this redux app does not work, that is the reason, just a typo in a response variable, let me know about any typos
+this app can not read, so if this redux app does not work, that is the reason, just a typo in a response variable, let me know about any typos
 in any of the server apps and I will try to fix it.
 
-## Server side implementations
+# Full-stack Applications
+## E-commerce (shopping cart)
+### Server side implementations
 - [Spring Boot + Spring Data Hibernate](https://github.com/melardev/SBootApiEcomMVCHibernate)
 - [Spring Boot + JAX-RS Jersey + Spring Data Hibernate](https://github.com/melardev/SpringBootEcommerceApiJersey)
 - [Node Js + Sequelize](https://github.com/melardev/ApiEcomSequelizeExpress)
@@ -35,7 +63,7 @@ The next to come are:
 - AspNetCore + NHibernate
 - AspNetCore + Dapper
 
-## Client side implementations
+### Client side implementations
 This client side E-commerce application is also implemented using other client side technologies:
 - [React Redux](https://github.com/melardev/ReactReduxEcommerceRestApi)
 - [React](https://github.com/melardev/ReactEcommerceRestApi)
@@ -43,16 +71,76 @@ This client side E-commerce application is also implemented using other client s
 - [Vue + Vuex](https://github.com/melardev/VueVuexEcommerceRestApi)
 - [Angular](https://github.com/melardev/AngularEcommerceRestApi)
 
-The next client to come will be:
+## Blog/CMS
+### Server side implementations
+### Client side
+#### The next come are
+- Angular NgRx-Store
+- Angular + Material
+- React + Material
+- React + Redux + Material
+- Vue + Material
+- Vue + Vuex + Material
 - Ember
-- Android with architecture components
-- Angular + Material Design
-- Angular + NgrxEffects
-- Angular + NgrxEffects + Material Design
-- React + Material Design
-- React + Redux + Material Design
-- Vue + Material Design
-- Vue + Vuex + Material Design
+
+## Simple CRUD(Create, Read, Update, Delete)
+### Server side implementations
+### Client side implementations
+#### The next come are
+- Angular NgRx-Store
+- Angular + Material
+- React + Material
+- React + Redux + Material
+- Vue + Material
+- Vue + Vuex + Material
+- Ember
+- Vanilla javascript
+
+## CRUD + Pagination
+### Server side implementations
+- [Spring Boot + Spring Data + Jersey](https://github.com/melardev/SpringBootJerseyApiPaginatedCrud)
+- [Spring Boot + Spring Data](https://github.com/melardev/SpringBootApiJpaPaginatedCrud)
+- [Spring Boot Reactive + Spring Data Reactive](https://github.com/melardev/ApiCrudReactiveMongo)
+- [Go with Gin Gonic](https://github.com/melardev/GoGinGonicApiPaginatedCrud)
+- [Laravel](https://github.com/melardev/LaravelApiPaginatedCrud)
+- [Rails + JBuilder](https://github.com/melardev/RailsJBuilderApiPaginatedCrud)
+- [Rails](https://github.com/melardev/RailsApiPaginatedCrud)
+- [NodeJs Express + Sequelize](https://github.com/melardev/ExpressSequelizeApiPaginatedCrud)
+- [NodeJs Express + Bookshelf](https://github.com/melardev/ExpressBookshelfApiPaginatedCrud)
+- [NodeJs Express + Mongoose](https://github.com/melardev/ExpressApiMongoosePaginatedCrud)
+- [Python Django](https://github.com/melardev/DjangoApiCrudPaginated)
+- [Python Django + Rest Framework](https://github.com/melardev/DjangoRestFrameworkPaginatedCrud)
+- [Python Flask](https://github.com/melardev/FlaskApiPaginatedCrud)
+- [AspNet Core](https://github.com/melardev/AspNetCoreApiPaginatedCrud)
+- [AspNet Web Api 2](https://github.com/melardev/WebApiPaginatedAsyncCrud)
+
+#### The next come are
+- NodeJs Express + Knex
+- Flask + Flask-Restful
+- Laravel + Fractal
+- Laravel + ApiResources
+- Go with Mux
+- AspNet Web Api 2
+- Jersey
+- Elixir
+
+### Client side implementations
+- [Angular](https://github.com/melardev/AngularPaginatedAsyncCrud)
+- [React-Redux](https://github.com/melardev/ReactReduxPaginatedAsyncCrud)
+- [React](https://github.com/melardev/ReactAsyncPaginatedCrud)
+- [Vue + Vuex](https://github.com/melardev/VueVuexPaginatedAsyncCrud)
+- [Vue](https://github.com/melardev/VuePaginatedAsyncCrud)
+
+
+#### The next come are
+- Angular NgRx-Store
+- Angular + Material
+- React + Material
+- React + Redux + Material
+- Vue + Material
+- Vue + Vuex + Material
+- Ember
+- Vanilla javascript
 
 # TODO
 - After login or register redirect where the user was

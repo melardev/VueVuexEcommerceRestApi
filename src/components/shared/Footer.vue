@@ -1,7 +1,7 @@
 <template>
     <footer class="footer text-center">
         <div class="container">
-            <span class="text-muted">&copy; 2019 - Vue Crud by Melardev</span>&nbsp;
+            <span class="text-muted">&copy; 2019 - Vue + Vuex Ecommerce App by Melardev</span>&nbsp;
             <a target="_blank" rel="noopener noreferrer" href="https://youtube.com/melardev"
                class="btn btn-social-icon btn-google-plus">
                 <i class="fa fa-youtube"></i>

@@ -35,13 +35,13 @@
                 </li>
 
 
-                <li v-if="pageMeta.current_page_number < pageMeta.total_pages_count - 1" class="page-item"
+                <li v-if="pageMeta.current_page_number < pageMeta.number_of_pages - 1" class="page-item"
                     data-toggle="tooltip" data-placement="top" title="Go to last page">
                     <a class="page-link"
-                       @click="fetchMore(pageMeta.total_pages_count,pageMeta.requested_page_size)">
+                       @click="fetchMore(pageMeta.number_of_pages,pageMeta.requested_page_size)">
 
                         <span aria-hidden="true">&raquo;</span>
-                        <span class="sr-only"> {{pageMeta.total_pages_count}}</span>
+                        <span class="sr-only"> {{pageMeta.number_of_pages}}</span>
                     </a>
                 </li>
             </ul>
