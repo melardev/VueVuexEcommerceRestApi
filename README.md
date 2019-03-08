@@ -4,8 +4,10 @@ while making this app I am using this [Spring Boot Server](https://github.com/me
 to use that as well, all the other servers worked from postman, but I don't know If they return in the response something called differently that
 this redux app can not read, so if this redux app does not work, that is the reason, just a typo in a response variable, let me know about any typos
 in any of the server apps and I will try to fix it.
-- [Spring Boot + Hibernate](https://github.com/melardev/SBootApiEcomMVCHibernate)
-- [Spring Boot + JAX-RS Jersey + Hibernate](https://github.com/melardev/SpringBootEcommerceApiJersey)
+
+## Server side implementations
+- [Spring Boot + Spring Data Hibernate](https://github.com/melardev/SBootApiEcomMVCHibernate)
+- [Spring Boot + JAX-RS Jersey + Spring Data Hibernate](https://github.com/melardev/SpringBootEcommerceApiJersey)
 - [Node Js + Sequelize](https://github.com/melardev/ApiEcomSequelizeExpress)
 - [Node Js + Bookshelf](https://github.com/melardev/ApiEcomBookshelfExpress)
 - [Node Js + Mongoose](https://github.com/melardev/ApiEcomMongooseExpress)
@@ -16,12 +18,41 @@ in any of the server apps and I will try to fix it.
 - [AspNet Core](https://github.com/melardev/ApiAspCoreEcommerce)
 - [Laravel](https://github.com/melardev/ApiEcommerceLaravel)
 
+The next to come are:
+- Spring Boot + Spring Data Hibernate + Kotlin
+- Spring Boot + Jax-RS Jersey + Hibernate + Kotlin
+- Spring Boot + mybatis
+- Spring Boot + mybatis + Kotlin
+- Asp.Net Web Api v2
+- Elixir
+- Golang + Beego
+- Golang + Iris
+- Golang + Echo
+- Golang + Mux
+- Golang + Revel
+- Golang + Kit
+- Flask + Flask-Restful
+- AspNetCore + NHibernate
+- AspNetCore + Dapper
+
+## Client side implementations
 This client side E-commerce application is also implemented using other client side technologies:
 - [React Redux](https://github.com/melardev/ReactReduxEcommerceRestApi)
 - [React](https://github.com/melardev/ReactEcommerceRestApi)
 - [Vue](https://github.com/melardev/VueEcommerceRestApi)
 - [Vue + Vuex](https://github.com/melardev/VueVuexEcommerceRestApi)
 - [Angular](https://github.com/melardev/AngularEcommerceRestApi)
+
+The next client to come will be:
+- Ember
+- Android with architecture components
+- Angular + Material Design
+- Angular + NgrxEffects
+- Angular + NgrxEffects + Material Design
+- React + Material Design
+- React + Redux + Material Design
+- Vue + Material Design
+- Vue + Vuex + Material Design
 
 # TODO
 - After login or register redirect where the user was
