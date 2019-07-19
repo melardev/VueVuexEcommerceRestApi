@@ -7,10 +7,11 @@ import {AuthAction} from "@/store/types.actions";
 import {CartService} from "@/services/local/cart.service";
 import Toasted from 'vue-toasted';
 import VueCarousel from 'vue-carousel';
-
+import CKEditor from '@ckeditor/ckeditor5-vue';
 
 Vue.use(VueCarousel);
 Vue.use(Toasted);
+Vue.use(CKEditor);
 
 UsersService.init();
 const user = UsersService.getUser();

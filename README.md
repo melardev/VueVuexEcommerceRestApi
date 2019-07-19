@@ -153,6 +153,13 @@ then I removed this difference to keep it simple.
 - Implement the fetch products by tag and by category name, if I try to reuse the ProductList.vue then it is a little tricky
 because the UI may not update, I have to write good code to handle that situation. The server side apps are implemented to
 return products by tag and by category.
+- Restrict creation of products to admin
+- Better Exception Handling
+
+# Follow me
+- [Youtube Channel](https://youtube.com/melardev) I publish videos mainly on programming
+- [Blog](http://melardev.com) Sometimes I publish the source code there before Github
+- [Twitter](https://twitter.com/@melardev) I share tips on programming
 
 # Resources
 - [Vuex modules](https://vuex.vuejs.org/guide/modules.html)

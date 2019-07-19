@@ -64,7 +64,22 @@ const actions = {
                 return reject({success: false, full_messages: [err.message]});
             });
         });
-
+    },
+    [ProductAction.remote.CREATE](context, product) {
+        return new Promise((resolve, reject) => {
+            ProductsAxiosService.create(product).then(res => {
+                if (res.data && res.data.success) {
+                    context.commit(`notifications/${NotificationAction.SHOW_ALERT_SUCCESS}`, res.data.full_messages.length > 0 ? res.data.full_messages[0] : 'Product fetched!', {root: true});
+                    const product = stripResponse(res.data);
+                    return resolve({success: true, product});
+                }
+                return reject({success: false, full_messages: res.data.full_messages});
+            }).catch(err => {
+                debugger;
+                context.commit(NotificationAction.SHOW_TOAST_ERROR, err.message);
+                return reject({success: false, full_messages: [err.message]});
+            });
+        });
     },
 };
 

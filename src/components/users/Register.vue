@@ -35,7 +35,7 @@
                 <div class="form-group">
                     <button class="btn btn-success" style="width: 100%" @click.prevent="register"
                             :disabled="isLoading">
-                        <i v-if="isLoading" class="fa fa-spinner fa-spin"/>
+                        <i v-if="isLoading" class="fa fa-spinner fa-spin"></i>
                         Register
                     </button>
                 </div>
@@ -70,7 +70,6 @@
             }
         },
         methods: {
-            // ...mapActions('auth', ['clearMessage', 'addMessage', 'REGISTER']),
             ...mapActions('auth', {registerUser: AuthAction.remote.REGISTER}),
             ...mapActions('notifications', ['clearMessage', 'addMessage']),
             register() {

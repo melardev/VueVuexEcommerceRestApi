@@ -10,6 +10,7 @@ import Register from '../components/users/Register';
 import Profile from '../components/users/Profile';
 import OrderList from '../components/orders/OrderList';
 import AddressList from '../components/addresses/AddressList';
+import ProductCreate from "@/components/products/ProductCreate";
 
 Vue.use(Router);
 
@@ -32,6 +33,11 @@ export default new Router({
             path: '/cart',
             name: 'mycart',
             component: MyCart,
+        },
+        {
+            path: '/products/new',
+            name: 'product-create',
+            component: ProductCreate,
         },
         {
             path: '/products/:slug',

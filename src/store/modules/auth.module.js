@@ -65,8 +65,11 @@ const actions = {
     },
 
     [AuthAction.local.LOGOUT](context) {
-        context.commit(AuthAction.local.LOGOUT);
-        context.commit(`notifications/${NotificationAction.SHOW_ALERT_SUCCESS}`, 'Logged out successfully', {root: true});
+        return new Promise((resolve, reject) => {
+            context.commit(AuthAction.local.LOGOUT);
+            context.commit(`notifications/${NotificationAction.SHOW_ALERT_SUCCESS}`, 'Logged out successfully', {root: true});
+            resolve({success: true});
+        });
     },
 
     [AuthAction.remote.REGISTER](context, registerDto) {

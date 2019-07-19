@@ -20,7 +20,9 @@
                             <span class="sr-only">(current)</span>
                         </router-link>
                     </li>
-
+                    <li class="nav-item li-pointer" v-if="isLoggedIn">
+                        <router-link class="nav-link" to="/products/new" tag="li">Create Product</router-link>
+                    </li>
                     <li class="nav-item li-pointer" v-if="!isLoggedIn">
                         <router-link class="nav-link" to="/login" tag="li">Login</router-link>
                     </li>
