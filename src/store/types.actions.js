@@ -83,7 +83,6 @@ export const OrderAction = {
     }
 };
 
-
 export const CartAction = {
     ADD_PRODUCT_TO_CART: 'ADD_PRODUCT_TO_CART',
     UPDATE_CART_ITEM_QUANTITY: 'UPDATE_CART_ITEM_QUANTITY',

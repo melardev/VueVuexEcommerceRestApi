@@ -67,7 +67,8 @@
 
 <style>
     @import './assets/css/normalize.css';
-    @import url('https://fonts.googleapis.com/css?family=Roboto');
+    @import '~font-awesome/css/font-awesome.min.css';
+    @import '~bootstrap/dist/css/bootstrap.min.css';
 
     body {
         font-family: 'Roboto', sans-serif;

@@ -11,10 +11,11 @@ import Profile from '../components/users/Profile';
 import OrderList from '../components/orders/OrderList';
 import AddressList from '../components/addresses/AddressList';
 import ProductCreate from "@/components/products/ProductCreate";
+import {UsersService} from "@/services/local/users.service";
 
 Vue.use(Router);
 
-export default new Router({
+let router = new Router({
     mode: 'history',
     history: true,
     hash: false,
@@ -31,13 +32,17 @@ export default new Router({
         },
         {
             path: '/cart',
-            name: 'mycart',
+            name: 'my_cart',
             component: MyCart,
         },
         {
             path: '/products/new',
             name: 'product-create',
             component: ProductCreate,
+            meta: {
+                isAuthenticated: true,
+                isAdmin: true
+            }
         },
         {
             path: '/products/:slug',
@@ -53,19 +58,78 @@ export default new Router({
             path: '/profile',
             name: 'profile',
             component: Profile,
+            meta: {
+                isAuthenticated: true,
+            }
         },
         {
             path: '/orders',
             name: 'order-list',
             component: OrderList,
+            meta: {
+                isAuthenticated: true,
+            }
         },
         {
             path: '/addresses',
             name: 'address-list',
             component: AddressList,
+            meta: {
+                isAuthenticated: true,
+            }
         },
-        {path: '/login', component: Login, name: 'login', onlyGuest: true},
-        {path: '/register', component: Register, name: 'register', onlyGuest: true},
+        {
+            path: '/login', component: Login, name: 'login',
+            meta: {
+                isAuthenticated: false
+            }
+        },
+        {
+            path: '/register', component: Register, name: 'register',
+            meta: {
+                isAuthenticated: false
+            }
+        },
         {path: '*', redirect: '/'}
     ],
 });
+
+router.beforeEach((to, from, next) => {
+    const user = UsersService.getUser();
+    if (to.matched.some((routeRecord) => routeRecord.meta.isAuthenticated)) {
+        // User should be authenticated
+        if (user == null) {
+            return next({
+                path: '/login',
+                params: {nextUrl: to.fullPath}
+            });
+        } else {
+            if (to.matched.some((routeRecord2) => routeRecord2.meta.isAdmin)) {
+                // Must be admin
+                if (user.roles && user.roles.findIndex(r => r === 'ROLE_ADMIN') !== -1) {
+                    return next();
+                } else {
+                    debugger;
+                    return next({
+                        name: '/'
+                    });
+                }
+            } else {
+                return next();
+            }
+        }
+    } else if (to.matched.some((routeRecord) => routeRecord.meta.isAuthenticated === false)) {
+        // User should NOT be authenticated
+        if (user) {
+            // If he is redirect it to profile from there he should logout
+            return next({
+                name: 'profile'
+            });
+        } else {
+            return next();
+        }
+    }
+})
+;
+
+export default router;
